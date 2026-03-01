@@ -9,20 +9,10 @@ Sleek, premium image optimizer built for AI image detection pipelines.
 - **AVIF Conversion**: Highly efficient next-gen compression.
 - **Glassmorphic UI**: Premium dark-mode interface.
 
-## Quick Start
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run the server:
-   ```bash
-   python app.py
-   ```
-3. Open [http://localhost:5001](http://localhost:5001) in your browser.
 
 ## Tech Stack
 - **Backend**: Flask
 - **Processing**: Pillow + pillow-heif
 - **Frontend**: Vanilla HTML/CSS/JS (Glassmorphic Design)
 
-Crafted for Ishan & Antigravity.
+Crafted for Ishan.
