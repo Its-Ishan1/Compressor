@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek AVIF Compressor - Minimize Everything</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="A premium, lightweight AVIF image compressor and resizer tool. Minimal bytes, maximal quality.">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <main class="container">
+        <header>
+            <div class="logo">
+                <span class="icon">⚡</span>
+                <h1>AVIF <span>Mini</span></h1>
+            </div>
+            <p class="tagline">The future of image compression is here.</p>
+        </header>
+
+        <section class="drop-zone" id="drop-zone">
+            <input type="file" id="file-input" accept="image/*" hidden>
+            <div class="drop-zone__content">
+                <div class="upload-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                </div>
+                <h3>Drop your image here</h3>
+                <p>or click to browse your files</p>
+                <div class="supported-formats">PNG, JPG, WEBP, AVIF</div>
+            </div>
+        </section>
+
+        <section class="controls-panel" id="controls-panel" style="display: none;">
+            <div class="status-badge-auto">Forensic-Aware Auto Mode</div>
+            <div class="preview-container">
+                <img id="image-preview" src="" alt="Preview">
+                <div class="image-meta">
+                    <span id="file-name">filename.jpg</span>
+                    <span id="file-size-old">2.4 MB</span>
+                </div>
+            </div>
+
+            <div class="ai-info">
+                <p>Optimization target: Preserving ML features for AI detection while minimizing bytes.</p>
+            </div>
+
+            <button id="compress-btn" class="primary-btn">
+                <span class="btn-text">Optimize for AI Detector</span>
+                <span class="loader" style="display: none;"></span>
+            </button>
+        </section>
+
+        <section class="result-panel" id="result-panel" style="display: none;">
+            <div class="success-icon">✨</div>
+            <h2>Successfully Compressed!</h2>
+            <div class="stats-card">
+                <div class="stat">
+                    <span class="label">Before</span>
+                    <span class="value" id="final-old-size">2.4 MB</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stat">
+                    <span class="label">After</span>
+                    <span class="value accent" id="final-new-size">142 KB</span>
+                </div>
+                <div class="saving-badge" id="saving-badge">-94%</div>
+            </div>
+            <a id="download-link" href="#" download class="primary-btn">
+                Download AVIF
+            </a>
+            <button class="secondary-btn" id="reset-btn">Compress Another</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 AVIF Mini. Crafted for Ishan. Minimal Bytes, Maximal Impact.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+venv/
+frontend/node_modules/
+dist/
+build/
+*.avif
+*.heic
+*.heif
+*.jpg
+*.jpeg
+*.png
+*.webp
